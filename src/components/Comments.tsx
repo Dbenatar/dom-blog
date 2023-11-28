@@ -35,15 +35,18 @@ export default async function Comments({ postSlug }: { postSlug: string }) {
 
         <button type="submit">Send comment</button>
       </form>
-      {comments.map((comment) => {
-        return (
-          <li key={comment.id}>
-            {comment.username} says...
-            <br />
-            {comment.content}
-          </li>
-        );
-      })}
+
+      <ul>
+        {comments.map((comment) => {
+          return (
+            <li key={comment.id}>
+              {comment.username} says...
+              <br />
+              {comment.content}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
