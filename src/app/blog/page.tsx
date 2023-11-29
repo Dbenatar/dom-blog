@@ -16,6 +16,7 @@ export default function Page() {
           );
         })}
       </ul>
+      <Link href="/">Go Home</Link>
     </div>
   );
 }
