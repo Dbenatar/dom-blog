@@ -16,7 +16,7 @@ export default async function Comments({ postSlug }: { postSlug: string }) {
   }
 
   return (
-    <div>
+    <div className="flex flex-col items-center  p-24">
       <h2>Comments</h2>
       <h3>Leave a comment:</h3>
 
