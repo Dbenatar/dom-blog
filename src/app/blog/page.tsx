@@ -6,7 +6,7 @@ export default function Page() {
 
   return (
     <div>
-      <h2>My posts: </h2>
+      <h2 className="py-20 flex space-x-8 text-center">My posts: </h2>
       <ul>
         {posts.map((post) => {
           return (
