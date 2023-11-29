@@ -38,6 +38,7 @@ export default async function Comments({ postSlug }: { postSlug: string }) {
       </form>
 
       <ul>
+        {/* @ts-ignore */}
         {comments.map((comment) => {
           return (
             <li key={comment.id}>
