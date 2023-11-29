@@ -1,8 +1,6 @@
 import { WEB_SITE } from "config";
 
 export default async function Comments({ postSlug }: { postSlug: string }) {
-  const WEB_SITE = "http://localhost:3000";
-
   let comments = [];
 
   try {
