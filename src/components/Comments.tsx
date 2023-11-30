@@ -16,12 +16,11 @@ export default async function Comments({ postSlug }: { postSlug: string }) {
   }
 
   return (
-    <div className="flex flex-col items-center  p-24">
+    <div>
       <CommentForm postSlug={postSlug} />
-      <h2>Comments</h2>
-      <h3>Leave a comment:</h3>
+      <h2 className="m-5">Comments: </h2>
 
-      <ul>
+      <ul className="m-5">
         {/* @ts-ignore */}
         {comments.map((comment) => {
           return (

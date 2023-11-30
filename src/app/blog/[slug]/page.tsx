@@ -29,8 +29,8 @@ export default function BlogPost({ params }: BlogPostParams) {
   }
 
   return (
-    <div>
-      <h1>{post.title}</h1>
+    <div className="bg-slate-700 flex min-h-screen   p-4">
+      <h1 className="p-10">{post.title}</h1>
       <div
         dangerouslySetInnerHTML={{ __html: post.body.html }}
         className="prose dark:prose-invert"

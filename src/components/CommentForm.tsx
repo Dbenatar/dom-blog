@@ -22,9 +22,11 @@ export function CommentForm({ postSlug }: { postSlug: string }) {
 
   return (
     <form action={handleFormSubmit}>
-      <label htmlFor="username">Name</label>
+      <label htmlFor="username" className="m-5 text-start">
+        Name:{" "}
+      </label>
       <input type="text" name="username" className="text-neutral-900" />
-      <label htmlFor="comment">Comment</label>
+      <label htmlFor="comment">Comment:</label>
       <textarea
         name="comment"
         cols={30}
